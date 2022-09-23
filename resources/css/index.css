@@ -1,6 +1,7 @@
 * {
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
 }
 
 html {
@@ -8,11 +9,19 @@ html {
 }
 
 .container {
-  width: 144rem;
+  max-width: 144rem;
   margin: 0 auto;
 }
 
-.header {
+.grid {
+  display: grid;
+}
+
+.grid--2-cols {
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.header__content {
   display: flex;
   justify-content: space-around;
   align-items: center;
@@ -69,4 +78,236 @@ html {
 
 .header__cart-img > img {
   width: 100%;
+}
+
+.hero-section {
+  padding-top: 2.6rem;
+}
+
+.hero-section__content {
+  column-gap: 9.5rem;
+}
+
+.hero-section__header {
+  padding-left: 13.5rem;
+}
+
+.heading--seaweed {
+  font-family: "Seaweed Script";
+  font-weight: 400;
+  font-size: 4.4rem;
+  line-height: 5rem;
+  color: #ff4415;
+}
+
+.heading--primary {
+  font-family: "Inter", sans-serif;
+  font-weight: 700;
+  font-size: 6.2rem;
+  line-height: 7.2rem;
+  color: #101010;
+  letter-spacing: -0.01em;
+  margin-bottom: 2.2rem;
+}
+
+.hero-section__desc {
+  font-family: "Inter", sans-serif;
+  font-weight: 400;
+  font-size: 1.8rem;
+  line-height: 3rem;
+  letter-spacing: -0.01em;
+  color: #646464;
+}
+
+.hero-section__form {
+  margin-top: 3.4rem;
+  display: flex;
+  align-items: center;
+}
+
+.hero-section__input {
+  width: 30.6rem;
+  height: 6.2rem;
+  padding-left: 1.7rem;
+  padding-right: 1.8rem;
+  border-radius: 1.5rem 0rem 0rem 1.5rem;
+  border: 2px solid #3fda7d;
+  background-image: url("../images/location-icon.png");
+  background-repeat: no-repeat;
+  background-position: 26.8rem 50%;
+}
+
+.hero-section__input::placeholder {
+  font-family: "Inter", sans-serif;
+  font-weight: 500;
+  font-size: 1.5rem;
+  line-height: 1.5rem;
+  color: #b1b1b1;
+}
+
+.hero-section__btn {
+  width: 15.8rem;
+  height: 6.2rem;
+  background: linear-gradient(92.18deg, #3fda7d 48.17%, #00be4c 100%);
+  box-shadow: 0px 10px 20px -10px rgba(234, 234, 234, 0.4);
+  border: 2px solid #3fda7d;
+  border-top-right-radius: 16px;
+  border-bottom-right-radius: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.hero-section__btn > span {
+  color: #fff;
+  font-family: "Inter", sans-serif;
+  font-weight: 500;
+  font-size: 1.6rem;
+  line-height: 1.9rem;
+}
+
+.hero-section__icon {
+  background: #fff;
+  border-radius: 12px;
+  width: 4.8rem;
+  height: 4.8rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.hero-section__icon-right {
+  font-size: 1.8rem;
+  color: #00be4c;
+}
+
+.hero-section__text {
+  font-family: "Inter", sans-serif;
+  font-weight: 50rem;
+  font-size: 1.8rem;
+  line-height: 3rem;
+  color: #838383;
+  margin-top: 5rem;
+}
+
+.hero-section__sign-in {
+  color: #ff4d20;
+}
+
+.food-recommend__content {
+  margin-top: 7.1rem;
+  padding: 0px 13.5rem;
+}
+
+.food-recommend__header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.food-recommend__title {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.food-recommend__title > h2 {
+  font-family: "Inter", sans-serif;
+  font-weight: 700;
+  font-size: 3.4rem;
+  list-style: 4rem;
+  letter-spacing: -0.01em;
+}
+
+.food-recommend__button {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.food-recommend__button-previous,
+.food-recommend__button-next {
+  width: 2.9rem;
+  height: 2.9rem;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.food-recommend__icon {
+  font-size: 1.4rem;
+  color: #c4c4c4;
+}
+
+.food-recommend__button--active {
+  background: #151515;
+}
+
+.food-recommend__button--active > .food-recommend__icon {
+  color: #fff;
+}
+
+.food-recommend__main {
+  margin-top: 8.4rem;
+  display: flex;
+  gap: 3.2rem;
+}
+
+.food-recommend__card {
+  display: flex;
+  flex-direction: column;
+  width: 27rem;
+  height: 13rem;
+  border-radius: 24px;
+  background-color: #f7f7f7;
+  padding: 2rem 3rem;
+  position: relative;
+}
+
+.food-recommend__card-name {
+  font-family: "Inter", sans-serif;
+  font-size: 2.4rem;
+  line-height: 2.4rem;
+  color: #171717;
+  font-weight: 700;
+  letter-spacing: -0.01em;
+}
+
+.food-recommend__card-text {
+  font-family: "Inter", sans-serif;
+  font-size: 1.8rem;
+  font-weight: 500;
+  line-height: 2.5rem;
+  color: #969696;
+  margin-top: 1.6rem;
+}
+
+.food-recommend__card-price {
+  font-family: "Inter", sans-serif;
+  font-size: 1.8rem;
+  font-weight: 500;
+  line-height: 2.5rem;
+  color: #ff4d20;
+}
+
+.food-recommend__card-img {
+  position: absolute;
+  left: 10rem;
+  top: -3.2rem;
+}
+
+.food-recommend__card:nth-child(2) > .food-recommend__card-img {
+  left: 14rem;
+  top: -4rem;
+}
+
+.food-recommend__card:nth-child(3) > .food-recommend__card-img {
+  left: 14rem;
+  top: -2.4rem;
+}
+
+.food-recommend__card:nth-child(4) > .food-recommend__card-img {
+  left: 14rem;
+  top: -4rem;
 }

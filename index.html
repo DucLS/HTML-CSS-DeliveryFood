@@ -8,38 +8,157 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Inter:wght@500;600;700&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Seaweed+Script&display=swap"
       rel="stylesheet"
     />
     <title>DeliveryFood</title>
   </head>
   <body>
-    <header class="header container">
-      <div class="header__logo">
-        <img src="./resources/images/Logo.png" alt="Logo delivery food" />
-      </div>
-      <nav class="header__nav">
-        <ul class="header__nav-list">
-          <li class="header__nav-item">
-            <a href="#">Home</a>
-          </li>
-          <li class="header__nav-item">
-            <a href="#">Review</a>
-          </li>
-          <li class="header__nav-item">
-            <a href="#">About Us</a>
-          </li>
-          <li class="header__nav-item">
-            <a href="#">Contact Us</a>
-          </li>
-        </ul>
-      </nav>
-      <div class="header__btn">
-        <a class="header__sign-up">Sign Up</a>
-        <div class="header__cart-img">
-          <img src="./resources/images/ShoppingCart.png" alt="Shopping food" />
+    <header class="header">
+      <div class="header__content container">
+        <div class="header__logo">
+          <img src="./resources/images/Logo.png" alt="Logo delivery food" />
+        </div>
+        <nav class="header__nav">
+          <ul class="header__nav-list">
+            <li class="header__nav-item">
+              <a href="#">Home</a>
+            </li>
+            <li class="header__nav-item">
+              <a href="#">Review</a>
+            </li>
+            <li class="header__nav-item">
+              <a href="#">About Us</a>
+            </li>
+            <li class="header__nav-item">
+              <a href="#">Contact Us</a>
+            </li>
+          </ul>
+        </nav>
+        <div class="header__btn">
+          <a class="header__sign-up">Sign Up</a>
+          <div class="header__cart-img">
+            <img
+              src="./resources/images/ShoppingCart.png"
+              alt="Shopping food"
+            />
+          </div>
         </div>
       </div>
     </header>
+    <main>
+      <section class="hero-section">
+        <div class="hero-section__content container grid grid--2-cols">
+          <div class="hero-section__header">
+            <span class="heading--seaweed">Hungry?</span>
+            <h1 class="heading--primary">Wait a minute for delicious.</h1>
+            <p class="hero-section__desc">
+              Best cooks and best delivery guys all at your service. Hot tasty
+              food will reach you in 20mins.
+            </p>
+            <form class="hero-section__form" action="#">
+              <input
+                class="hero-section__input"
+                type="text"
+                placeholder="Enter your delivery location"
+              />
+              <button class="hero-section__btn">
+                <span>Discover</span>
+                <div class="hero-section__icon">
+                  <ion-icon
+                    class="hero-section__icon-right"
+                    name="chevron-forward-outline"
+                  ></ion-icon>
+                </div>
+              </button>
+            </form>
+            <p class="hero-section__text">
+              Already member of our communty?
+              <span class="hero-section__sign-in">Sign in</span>
+            </p>
+          </div>
+          <div class="hero-section__img">
+            <img src="./resources/images/hero-img.png" alt="" />
+          </div>
+        </div>
+      </section>
+
+      <section class="food-recommend">
+        <div class="food-recommend__content container">
+          <header class="food-recommend__header">
+            <div class="food-recommend__title">
+              <h2>Food near me</h2>
+              <img src="./resources/images/fire-icon.png" alt="" />
+            </div>
+            <div class="food-recommend__button">
+              <div class="food-recommend__button-previous">
+                <ion-icon class="food-recommend__icon" name="chevron-back-outline"></ion-icon>
+              </div>
+              <div class="food-recommend__button-next food-recommend__button--active">
+                <ion-icon class="food-recommend__icon" name="chevron-forward-outline"></ion-icon>
+              </div>
+            </div>
+          </header>
+
+          <div class="food-recommend__main">
+            <div class="food-recommend__card">
+              <h2 class="food-recommend__card-name">
+                Pizza
+              </h2>
+              <span class="food-recommend__card-text">Starting</span>
+              <span class="food-recommend__card-price">$14.00</span>
+              <div class="food-recommend__card-img">
+                <img src="./resources/images/pizza.png" alt="Pizza">
+              </div>
+            </div>
+            <div class="food-recommend__card">
+              <h2 class="food-recommend__card-name">
+                Drinks
+              </h2>
+              <span class="food-recommend__card-text">Starting</span>
+              <span class="food-recommend__card-price">$2.00</span>
+              <div class="food-recommend__card-img">
+                <img src="./resources/images/juice.png" alt="Orange juice">
+              </div>
+            </div>
+            <div class="food-recommend__card">
+              <h2 class="food-recommend__card-name">
+                F.Chicken
+              </h2>
+              <span class="food-recommend__card-text">Starting</span>
+              <span class="food-recommend__card-price">$4.50</span>
+              <div class="food-recommend__card-img">
+                <img src="./resources/images/chicken.png" alt="Chicken">
+              </div>
+            </div>
+            <div class="food-recommend__card">
+              <h2 class="food-recommend__card-name">
+                French F.
+              </h2>
+              <span class="food-recommend__card-text">Starting</span>
+              <span class="food-recommend__card-price">$8.00</span>
+              <div class="food-recommend__card-img">
+                <img src="./resources/images/potato.png" alt="Potato chips
+                ">
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
   </body>
+  <script
+    type="module"
+    src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+  ></script>
+  <script
+    nomodule
+    src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+  ></script>
 </html>
