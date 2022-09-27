@@ -421,10 +421,11 @@ html {
   padding-top: 1.8rem;
 }
 
-.popular-menu__card-img > img {
-  margin-left: auto;
-  margin-right: auto;
-  display: block;
+.popular-menu__card-img {
+  height: 19rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .popular-menu__card-body {
