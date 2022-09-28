@@ -416,8 +416,6 @@ html {
   border: 1.2px solid #efefef;
   border-radius: 24px;
   background-color: #fff;
-  width: 37rem;
-  height: 41rem;
   padding-top: 1.8rem;
 }
 
@@ -532,4 +530,114 @@ html {
 .popular-menu__icon-right {
   font-size: 1.8rem;
   color: #00be4c;
+}
+
+.location-inner {
+  padding-top: 12rem;
+}
+
+.location-inner__header {
+  display: flex;
+  flex-direction: column;
+  gap: 0.8rem;
+  justify-content: center;
+  align-items: center;
+}
+
+.location-inner__sub-heading {
+  font-family: "Seaweed script";
+  font-weight: 400;
+  font-size: 4rem;
+  line-height: 5rem;
+  color: #ff4415;
+}
+
+.location-inner__header > h2 {
+  text-align: center;
+}
+
+.location-inner__main {
+  display: flex;
+  gap: 5.8rem;
+  margin: 8rem 20.5rem 0;
+}
+
+.pickup-point {
+  padding: 5.2rem 0 5.1rem;
+}
+
+.pickup-point__header {
+  display: flex;
+  gap: 5.8rem;
+  align-items: center;
+  margin-bottom: 8rem;
+}
+
+.pickup-point__heading {
+  font-family: "Inter", sans-serif;
+  font-weight: 700;
+  font-size: 3.2rem;
+  line-height: 4rem;
+  letter-spacing: -0.01em;
+  color: #101010;
+}
+
+.pickup-point__sub-heading {
+  font-family: "Inter", sans-serif;
+  font-weight: 500;
+  font-size: 1.5rem;
+  line-height: 1.5rem;
+  letter-spacing: 0.005em;
+  color: #c0c0c0;
+
+  margin-top: 1rem;
+}
+
+.pickup-point__card {
+  width: 44rem;
+  border-bottom: 1.2px solid #f0f0f0;
+}
+
+.pickup-point__card:nth-child(2) {
+  margin-bottom: 5.1rem;
+}
+
+.pickup-point__card-name {
+  font-family: "Inter", sans-serif;
+  font-weight: 600;
+  font-size: 1.4rem;
+  line-height: 3rem;
+  letter-spacing: 0.2em;
+  color: #36BD59;
+}
+
+.pickup-point__card-desc {
+  font-family: "Inter", sans-serif;
+  font-weight: 500;
+  font-size: 2.8rem;
+  line-height: 4rem;
+  letter-spacing: -0.01em;
+  color: #c7c7c7;
+
+  margin-bottom: 3.3rem;
+}
+
+.pickup-point__card-locate {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1.9rem;
+}
+
+.pickup-point__card-address {
+  font-family: "Inter", sans-serif;
+  font-weight: 500;
+  font-size: 1.5rem;
+  line-height: 1.5rem;
+  letter-spacing: 0.005em;
+  color: #101010;
+}
+
+.map__img {
+  height: 100%;
 }
